@@ -1,0 +1,9 @@
+<form [formGroup]="form" (ngSubmit)="(onSubmit)">
+  <app-input-field
+    formControlName="nome"
+    placeholder="Informe o um nome"
+    id="nome"
+    [control]="form.get('nome')"
+  ></app-input-field>
+  <button [disabled]="!form.valid">Enviar</button>
+</form>

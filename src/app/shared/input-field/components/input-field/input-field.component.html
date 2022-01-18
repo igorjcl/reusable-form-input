@@ -1,0 +1,8 @@
+<label [attr.for]="id">{{ label }}</label>
+<input
+  [placeholder]="placeholder"
+  [id]="id"
+  [type]="type"
+  [readonly]="!!isReadOnly"
+  [(ngModel)]="value"
+/>
